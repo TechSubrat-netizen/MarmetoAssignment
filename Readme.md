@@ -77,6 +77,8 @@ Manages the dynamic aspects of the cart:
 - Displays the cart items dynamically.
 - Handles quantity adjustments and item removal.
 - Updates the cart totals and saves changes to `localStorage`.
+# Visit Site
+- click on https://myassgn.netlify.app/
 
 
 
