@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marmeto Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="./index.css" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <a href=""><img src="./marmeto_logo.png" alt="Marmeto"></a>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+        <div style="margin-left: 20px; display: flex; gap: 45px;">
+            <i class="fa-regular fa-heart" style="font-size: 20px;"></i>
+            <i class="fa fa-search" style="font-size: 20px;"></i>
+            <i class="fa fa-shopping-cart" style="font-size: 20px;"></i>
+        </div>
+        
+    </header>
+
+    <div class="breadcrumb">
+        <h1>Cart</h1>
+        <p>Home > Cart</p>
+    </div>
+
+    <main class="cart-section">
+      <div class="cart-details">
+        <table class="cart-table">
+            <thead>
+                <tr>
+                  <th> </th>
+                    <th>Product</th>
+                  
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Subtotal</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="table-body"></tbody>
+        </table>
+      </div>
+        <aside class="cart-totals"></aside>
+    </main>
+
+    <footer>
+        <div>
+            <p><i class="fa-solid fa-trophy"></i>High Quality<br>crafted from top materials</p>
+        </div>
+        <div>
+            <p><i class="fa-solid fa-circle-exclamation"></i>Warranty Protection<br>Over 2 years</p>
+        </div>
+        <div>
+            <p><i class="fa-solid fa-truck-fast"></i>Free Shipping<br>Order over 150 $</p>
+        </div>
+        <div>
+            <p><i class="fa-solid fa-handshake-angle"></i>24/7 Support<br>Dedicated support</p>
+        </div>
+    </footer>
+
+    <div id="loading" style="display: none;">
+        <p>Loading...</p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
