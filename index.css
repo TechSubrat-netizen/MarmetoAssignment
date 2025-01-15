@@ -6,7 +6,6 @@ body {
     box-sizing: border-box;
     background-color: #f8f8f8;
 }
-// Header
 
 header {
     background-color: #ffffff;
@@ -35,9 +34,9 @@ header a {
     background-size: cover;
     height: 200px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
     text-align: center;
 }
 
@@ -45,23 +44,21 @@ header a {
     font-size: 36px;
     color: rgb(234, 221, 221);
     font-weight: bold;
-    margin: 0;
+    margin: 0; 
 }
 
 .breadcrumb p {
-    margin: 5px 0 0;
-    color: rgb(255, 255, 255);
+    margin: 5px 0 0; 
+    color: rgb(255, 255, 255); 
     font-size: 16px;
 }
 
-/* Cart section layout */
 .cart-section {
     display: flex;
     justify-content: space-between;
     padding: 20px;
 }
 
-/* Cart details section */
 .cart-details {
     width: 60%;
     background-color: #fff;
@@ -70,7 +67,6 @@ header a {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Cart totals section */
 .cart-totals {
     width: 35%;
     background-color: #f4e3cf;
@@ -88,13 +84,9 @@ header a {
     margin: 0 -20px 20px -20px;
 }
 
-/* Table styles */
 table {
     width: 100%;
     border-collapse: collapse;
-    display: block;
-    overflow-x: auto; /* Enable horizontal scroll on small screens */
-    white-space: nowrap;
 }
 
 th, td {
@@ -145,7 +137,6 @@ th {
     background-color: #b9904c;
 }
 
-/* Footer styles */
 footer {
     margin-top: 80px;
     background-color: #f4e3cf;
@@ -154,11 +145,10 @@ footer {
     justify-content: space-around;
     align-items: center;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    margin-top: auto;
+    bottom: 0;
+    left: 0;
 }
 
-/* Footer content */
 footer div {
     text-align: center;
 }
@@ -169,7 +159,7 @@ footer div img {
 
 footer p {
     color: #af8740;
-    font-size: 18px;
+    font-size: 18px; 
     display: flex;
     align-items: center;
 }
@@ -180,105 +170,41 @@ footer p i {
 }
 
 /* Media Queries for responsiveness */
-
-/* Large Tablets and small desktop */
 @media only screen and (max-width: 1200px) {
     .cart-section {
         flex-direction: column;
         align-items: center;
     }
-
     .cart-details, .cart-totals {
         width: 100%;
         margin: 10px 0;
     }
-
     footer {
         flex-direction: column;
         text-align: center;
     }
 }
 
-/* Tablets */
-/* Tablets */
 @media only screen and (max-width: 768px) {
-    /* Cart Section */
     .cart-section {
         flex-direction: column;
-        padding: 15px;
-        gap: 20px;
+        padding: 10px;
     }
-
-    /* Cart Details & Totals */
     .cart-details, .cart-totals {
         width: 100%;
         margin: 10px 0;
-        padding: 20px;
+        padding: 15px;
     }
-
-    /* Breadcrumb */
     .breadcrumb h1 {
         font-size: 28px;
-        padding: 0 10px;
     }
-
-    .breadcrumb p {
-        font-size: 14px;
-    }
-
-    /* Table */
-    table {
-        font-size: 14px;
-        overflow-x: auto;
-    }
-
-    th, td {
-        padding: 8px 12px;
-    }
-
-    .product-img {
-        height: 50px;
-    }
-
-    /* Footer */
     footer p {
         font-size: 16px;
     }
-
     footer {
-        padding: 15px 10px;
-        text-align: center;
-    }
-
-    /* Header (Ensure it stays one line) */
-    header {
-        padding: 10px 20px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: nowrap; /* Prevent wrapping */
-        gap: 20px; /* Space between elements */
-    }
-
-    header img {
-        height: 40px;
-    }
-
-    header a {
-        text-decoration: none;
-        color: #333;
-        margin: 0 15px;
-    }
-
-    header .icons {
-        gap: 20px;
-    }
-
-    header .fa {
-        font-size: 20px; /* Increase icon size for better visibility */
+        padding: 10px;
     }
 }
-
 
 /* Mobile View */
 @media only screen and (max-width: 480px) {
@@ -321,12 +247,19 @@ footer p i {
         padding: 10px;
     }
 
+   
     table {
-        overflow-x: auto; /* Make table scrollable */
-        -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+        width: 100%; 
+        overflow-x: auto; 
+        display: block; 
+        -webkit-overflow-scrolling: touch; 
+    }
+
+    th, td {
+        padding: 8px 12px;
     }
 
     .product-img {
-        height: 50px; /* Adjust product image size for mobile */
+        height: 50px;
     }
 }
